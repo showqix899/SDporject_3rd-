@@ -16,7 +16,9 @@ namespace shopmgmt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new shopmgmt.mobileStock());
             Application.Run(new Form1());
+           
         }
     }
 }

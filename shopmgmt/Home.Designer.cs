@@ -29,21 +29,23 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.addMobile = new System.Windows.Forms.Button();
-            this.customerInfo = new System.Windows.Forms.Button();
+            this.admin = new System.Windows.Forms.Button();
             this.stock = new System.Windows.Forms.Button();
             this.sellInformation = new System.Windows.Forms.Button();
             this.logOut = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,81 +53,29 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Aqua;
-            this.label1.Location = new System.Drawing.Point(635, 36);
+            this.label1.Location = new System.Drawing.Point(604, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 31);
             this.label1.TabIndex = 8;
             this.label1.Text = "HOME";
             // 
-            // pictureBox1
+            // admin
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(56, 134);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 123);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(56, 547);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(104, 123);
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(826, 336);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(104, 123);
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(826, 134);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(104, 123);
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(56, 336);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(104, 123);
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
-            // 
-            // addMobile
-            // 
-            this.addMobile.BackColor = System.Drawing.Color.Orange;
-            this.addMobile.Location = new System.Drawing.Point(56, 274);
-            this.addMobile.Name = "addMobile";
-            this.addMobile.Size = new System.Drawing.Size(104, 28);
-            this.addMobile.TabIndex = 14;
-            this.addMobile.Text = "ADD MOBILE";
-            this.addMobile.UseVisualStyleBackColor = false;
-            this.addMobile.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // customerInfo
-            // 
-            this.customerInfo.BackColor = System.Drawing.Color.Orange;
-            this.customerInfo.Location = new System.Drawing.Point(56, 693);
-            this.customerInfo.Name = "customerInfo";
-            this.customerInfo.Size = new System.Drawing.Size(104, 28);
-            this.customerInfo.TabIndex = 15;
-            this.customerInfo.Text = "Customer info";
-            this.customerInfo.UseVisualStyleBackColor = false;
-            this.customerInfo.Click += new System.EventHandler(this.button2_Click);
+            this.admin.BackColor = System.Drawing.Color.Orange;
+            this.admin.Location = new System.Drawing.Point(194, 239);
+            this.admin.Name = "admin";
+            this.admin.Size = new System.Drawing.Size(104, 37);
+            this.admin.TabIndex = 14;
+            this.admin.Text = "ADMIN";
+            this.admin.UseVisualStyleBackColor = false;
+            this.admin.Click += new System.EventHandler(this.admin);
             // 
             // stock
             // 
             this.stock.BackColor = System.Drawing.Color.Orange;
-            this.stock.Location = new System.Drawing.Point(56, 483);
+            this.stock.Location = new System.Drawing.Point(194, 488);
             this.stock.Name = "stock";
-            this.stock.Size = new System.Drawing.Size(104, 28);
+            this.stock.Size = new System.Drawing.Size(104, 37);
             this.stock.TabIndex = 16;
             this.stock.Text = "Stock";
             this.stock.UseVisualStyleBackColor = false;
@@ -134,9 +84,9 @@
             // sellInformation
             // 
             this.sellInformation.BackColor = System.Drawing.Color.Orange;
-            this.sellInformation.Location = new System.Drawing.Point(826, 274);
+            this.sellInformation.Location = new System.Drawing.Point(190, 239);
             this.sellInformation.Name = "sellInformation";
-            this.sellInformation.Size = new System.Drawing.Size(104, 28);
+            this.sellInformation.Size = new System.Drawing.Size(104, 37);
             this.sellInformation.TabIndex = 17;
             this.sellInformation.Text = "Sell Information";
             this.sellInformation.UseVisualStyleBackColor = false;
@@ -144,38 +94,111 @@
             // logOut
             // 
             this.logOut.BackColor = System.Drawing.Color.Orange;
-            this.logOut.Location = new System.Drawing.Point(826, 483);
+            this.logOut.Location = new System.Drawing.Point(190, 491);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(104, 28);
+            this.logOut.Size = new System.Drawing.Size(104, 37);
             this.logOut.TabIndex = 18;
             this.logOut.Text = "Log out";
             this.logOut.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Orange;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1350, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 34);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Orange;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.stock);
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.admin);
+            this.panel1.Location = new System.Drawing.Point(27, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(468, 817);
+            this.panel1.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::shopmgmt.Properties.Resources.admin_icon_10;
+            this.pictureBox1.Location = new System.Drawing.Point(163, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 171);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::shopmgmt.Properties.Resources.inventory;
+            this.pictureBox5.Location = new System.Drawing.Point(163, 300);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(167, 171);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Orange;
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.sellInformation);
+            this.panel2.Controls.Add(this.logOut);
+            this.panel2.Location = new System.Drawing.Point(812, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(468, 817);
+            this.panel2.TabIndex = 21;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::shopmgmt.Properties.Resources.logout;
+            this.pictureBox4.Location = new System.Drawing.Point(155, 300);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(167, 171);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::shopmgmt.Properties.Resources.sell;
+            this.pictureBox3.Location = new System.Drawing.Point(155, 50);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(167, 171);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1358, 795);
-            this.Controls.Add(this.logOut);
-            this.Controls.Add(this.sellInformation);
-            this.Controls.Add(this.stock);
-            this.Controls.Add(this.customerInfo);
-            this.Controls.Add(this.addMobile);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1392, 875);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,14 +208,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button addMobile;
-        private System.Windows.Forms.Button customerInfo;
+        private System.Windows.Forms.Button admin;
         private System.Windows.Forms.Button stock;
         private System.Windows.Forms.Button sellInformation;
         private System.Windows.Forms.Button logOut;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

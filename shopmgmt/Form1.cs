@@ -25,31 +25,57 @@ namespace shopmgmt
         
         private void Submit(object sender, EventArgs e)
         {
+
+
             try
             {
                 conn.Open();
-                var insertQuery = "insert into registrantion values(@username,@email,@phone,@password,@type)";
-                SqlCommand cmd = new SqlCommand(insertQuery, conn);
-                cmd.Parameters.AddWithValue("@username", Username_r.Text);
-                cmd.Parameters.AddWithValue("@email", email_r.Text);
-                cmd.Parameters.AddWithValue("@phone", phone_r.Text);
-                cmd.Parameters.AddWithValue("@password", pass_r.Text);
-                cmd.Parameters.AddWithValue("@type", comboBox1.SelectedItem);
-                cmd.ExecuteNonQuery();
+
+                var checkQuery = "SELECT COUNT(*) FROM registrantion WHERE username = @username OR email = @email";
+                SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                checkCmd.Parameters.AddWithValue("@username", Username_r.Text);
+                checkCmd.Parameters.AddWithValue("@email", email_r.Text);
+
+                int userCount = (int)checkCmd.ExecuteScalar();
+
+                if (userCount > 0)
+                {
+
+                    MessageBox.Show("User with this username or email already exists.");
+                }
+                else
+                {
+
+                    var insertQuery = "INSERT INTO registrantion (username, email, phone, password, type) VALUES (@username, @email, @phone, @password, @type)";
+                    SqlCommand cmd = new SqlCommand(insertQuery, conn);
+                    cmd.Parameters.AddWithValue("@username", Username_r.Text);
+                    cmd.Parameters.AddWithValue("@email", email_r.Text);
+                    cmd.Parameters.AddWithValue("@phone", phone_r.Text);
+                    cmd.Parameters.AddWithValue("@password", pass_r.Text);
+                    cmd.Parameters.AddWithValue("@type", comboBox1.SelectedItem);
+                    cmd.ExecuteNonQuery();
+
+
+                    Username_r.Clear();
+                    email_r.Clear();
+                    phone_r.Clear();
+                    pass_r.Clear();
+                    comboBox1.Items.Clear();
+                    MessageBox.Show(messgae);
+                }
+
                 conn.Close();
-                Username_r.Clear();
-                email_r.Clear();
-                phone_r.Clear();
-                pass_r.Clear();
-                comboBox1.Items.Clear();
-                MessageBox.Show(messgae);
             }
-            catch {
+
+            catch 
+            {
 
                 MessageBox.Show(errorMessage);
-            
             }
-           
+            
+
+
+
 
         }
 
@@ -79,7 +105,9 @@ namespace shopmgmt
                 login_pass.Clear();
                 Home home = new Home();
                 home.Show();
-                home.Close();
+                Form1 form = new Form1();
+                form.Close();
+                
                 
             }
             else
