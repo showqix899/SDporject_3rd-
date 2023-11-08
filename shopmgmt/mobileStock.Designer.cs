@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.mobilePrice = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.phoneName = new System.Windows.Forms.TextBox();
@@ -36,6 +37,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.processor = new System.Windows.Forms.TextBox();
+=======
+            this.label8 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.processor = new System.Windows.Forms.TextBox();
+            this.mobileName = new System.Windows.Forms.TextBox();
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.label3 = new System.Windows.Forms.Label();
             this.rom = new System.Windows.Forms.ComboBox();
             this.ram = new System.Windows.Forms.ComboBox();
@@ -48,6 +57,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.mobileName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
@@ -73,6 +83,30 @@
             this.customerName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+=======
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.customeremail = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.customerphone = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.addcustomer_info = new System.Windows.Forms.Button();
+            this.customeraddress = new System.Windows.Forms.TextBox();
+            this.customername = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.customerid = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -81,6 +115,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Orange;
+<<<<<<< HEAD
             this.panel1.Controls.Add(this.mobilePrice);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.phoneName);
@@ -88,6 +123,14 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.processor);
+=======
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.processor);
+            this.panel1.Controls.Add(this.mobileName);
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.rom);
             this.panel1.Controls.Add(this.ram);
@@ -105,6 +148,7 @@
             this.panel1.Size = new System.Drawing.Size(537, 756);
             this.panel1.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // mobilePrice
             // 
             this.mobilePrice.BackColor = System.Drawing.Color.Orange;
@@ -133,6 +177,8 @@
             this.phoneName.Size = new System.Drawing.Size(325, 30);
             this.phoneName.TabIndex = 20;
             // 
+=======
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // label8
             // 
             this.label8.AutoSize = true;
@@ -150,6 +196,7 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.button3.Location = new System.Drawing.Point(284, 625);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(222, 29);
@@ -157,6 +204,27 @@
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.deleteMobile);
+=======
+            this.button3.Location = new System.Drawing.Point(330, 557);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(99, 29);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Orange;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(183, 557);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(99, 29);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = false;
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // 
             // button1
             // 
@@ -164,9 +232,15 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(36, 625);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(222, 29);
+=======
+            this.button1.Location = new System.Drawing.Point(37, 557);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 29);
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.button1.TabIndex = 17;
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = false;
@@ -181,6 +255,18 @@
             this.processor.Size = new System.Drawing.Size(205, 30);
             this.processor.TabIndex = 16;
             // 
+<<<<<<< HEAD
+=======
+            // mobileName
+            // 
+            this.mobileName.BackColor = System.Drawing.Color.Orange;
+            this.mobileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mobileName.Location = new System.Drawing.Point(181, 243);
+            this.mobileName.Name = "mobileName";
+            this.mobileName.Size = new System.Drawing.Size(325, 30);
+            this.mobileName.TabIndex = 15;
+            // 
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // label3
             // 
             this.label3.AutoSize = true;
@@ -269,7 +355,11 @@
             "Vivo",
             "HTC",
             ""});
+<<<<<<< HEAD
             this.brand.Location = new System.Drawing.Point(184, 185);
+=======
+            this.brand.Location = new System.Drawing.Point(183, 187);
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.brand.Name = "brand";
             this.brand.Size = new System.Drawing.Size(323, 33);
             this.brand.TabIndex = 8;
@@ -343,6 +433,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mobile ID";
             // 
+<<<<<<< HEAD
             // mobileName
             // 
             this.mobileName.BackColor = System.Drawing.Color.Orange;
@@ -358,6 +449,14 @@
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button4);
+=======
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Orange;
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.button7);
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Location = new System.Drawing.Point(21, 18);
@@ -365,6 +464,7 @@
             this.panel2.Size = new System.Drawing.Size(170, 756);
             this.panel2.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Orange;
@@ -395,6 +495,8 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.customerInfo);
             // 
+=======
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Orange;
@@ -407,7 +509,36 @@
             this.button4.TabIndex = 20;
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.button4.Click += new System.EventHandler(this.button4_Click);
+=======
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Orange;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(21, 311);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(124, 59);
+            this.button6.TabIndex = 22;
+            this.button6.Text = "SELL INFO";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Orange;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(21, 212);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(124, 59);
+            this.button7.TabIndex = 23;
+            this.button7.Text = "MOBILE STOCK";
+            this.button7.UseVisualStyleBackColor = false;
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // 
             // button8
             // 
@@ -422,7 +553,10 @@
             this.button8.TabIndex = 24;
             this.button8.Text = "HOME";
             this.button8.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.button8.Click += new System.EventHandler(this.homebtn);
+=======
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // 
             // label9
             // 
@@ -434,6 +568,177 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Menu";
             // 
+<<<<<<< HEAD
+=======
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Orange;
+            this.panel3.Controls.Add(this.customeremail);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.customerphone);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.button9);
+            this.panel3.Controls.Add(this.button10);
+            this.panel3.Controls.Add(this.addcustomer_info);
+            this.panel3.Controls.Add(this.customeraddress);
+            this.panel3.Controls.Add(this.customername);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.customerid);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Location = new System.Drawing.Point(758, 18);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(537, 756);
+            this.panel3.TabIndex = 20;
+            // 
+            // customeremail
+            // 
+            this.customeremail.BackColor = System.Drawing.Color.Orange;
+            this.customeremail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customeremail.Location = new System.Drawing.Point(216, 351);
+            this.customeremail.Name = "customeremail";
+            this.customeremail.Size = new System.Drawing.Size(297, 30);
+            this.customeremail.TabIndex = 23;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(34, 351);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(86, 31);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "Email";
+            // 
+            // customerphone
+            // 
+            this.customerphone.BackColor = System.Drawing.Color.Orange;
+            this.customerphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerphone.Location = new System.Drawing.Point(217, 295);
+            this.customerphone.Name = "customerphone";
+            this.customerphone.Size = new System.Drawing.Size(297, 30);
+            this.customerphone.TabIndex = 21;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(31, 295);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(97, 31);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Phone";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(187, 36);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(256, 31);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "CUSTOMER INFO";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Orange;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(330, 557);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(99, 29);
+            this.button9.TabIndex = 19;
+            this.button9.Text = "Delete";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Orange;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(183, 557);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(99, 29);
+            this.button10.TabIndex = 18;
+            this.button10.Text = "Update";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // addcustomer_info
+            // 
+            this.addcustomer_info.BackColor = System.Drawing.Color.Orange;
+            this.addcustomer_info.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addcustomer_info.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addcustomer_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addcustomer_info.Location = new System.Drawing.Point(37, 557);
+            this.addcustomer_info.Name = "addcustomer_info";
+            this.addcustomer_info.Size = new System.Drawing.Size(99, 29);
+            this.addcustomer_info.TabIndex = 17;
+            this.addcustomer_info.Text = "ADD";
+            this.addcustomer_info.UseVisualStyleBackColor = false;
+            this.addcustomer_info.Click += new System.EventHandler(this.addCustomerInfo);
+            // 
+            // customeraddress
+            // 
+            this.customeraddress.BackColor = System.Drawing.Color.Orange;
+            this.customeraddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customeraddress.Location = new System.Drawing.Point(216, 240);
+            this.customeraddress.Name = "customeraddress";
+            this.customeraddress.Size = new System.Drawing.Size(298, 30);
+            this.customeraddress.TabIndex = 16;
+            // 
+            // customername
+            // 
+            this.customername.BackColor = System.Drawing.Color.Orange;
+            this.customername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customername.Location = new System.Drawing.Point(216, 184);
+            this.customername.Name = "customername";
+            this.customername.Size = new System.Drawing.Size(298, 30);
+            this.customername.TabIndex = 15;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(30, 184);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 31);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Name";
+            // 
+            // customerid
+            // 
+            this.customerid.BackColor = System.Drawing.Color.Orange;
+            this.customerid.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerid.Location = new System.Drawing.Point(216, 133);
+            this.customerid.Name = "customerid";
+            this.customerid.Size = new System.Drawing.Size(174, 30);
+            this.customerid.TabIndex = 7;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(30, 240);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(121, 31);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Address";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(30, 130);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(178, 31);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Customer ID";
+            // 
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Orange;
@@ -446,6 +751,7 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+<<<<<<< HEAD
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Orange;
@@ -638,17 +944,26 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "Name";
             // 
+=======
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // mobileStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1369, 805);
+<<<<<<< HEAD
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.mobileName);
+=======
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mobileStock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -660,7 +975,10 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
+<<<<<<< HEAD
             this.PerformLayout();
+=======
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
 
         }
 
@@ -681,12 +999,17 @@
         private System.Windows.Forms.TextBox mobileName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.Button button2;
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox processor;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button4;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel3;
@@ -711,5 +1034,26 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
+=======
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button addcustomer_info;
+        private System.Windows.Forms.TextBox customeraddress;
+        private System.Windows.Forms.TextBox customername;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox customerid;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox customerphone;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox customeremail;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button5;
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
     }
 }

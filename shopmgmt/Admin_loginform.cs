@@ -21,6 +21,7 @@ namespace shopmgmt
         SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
         string messgae = "Done";
         string errorMessage = "Something went wrong";
+<<<<<<< HEAD
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -60,6 +61,16 @@ namespace shopmgmt
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+=======
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void admin_login(object sender, EventArgs e)
+        {
+            
+>>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
         }
     }
 }
