@@ -68,7 +68,7 @@
             this.admin.TabIndex = 14;
             this.admin.Text = "ADMIN";
             this.admin.UseVisualStyleBackColor = false;
-            this.admin.Click += new System.EventHandler(this.admin);
+            this.admin.Click += new System.EventHandler(this.admin_Click);
             // 
             // stock
             // 
@@ -79,7 +79,7 @@
             this.stock.TabIndex = 16;
             this.stock.Text = "Stock";
             this.stock.UseVisualStyleBackColor = false;
-            this.stock.Click += new System.EventHandler(this.button3_Click);
+            this.stock.Click += new System.EventHandler(this.stock_Click);
             // 
             // sellInformation
             // 
@@ -100,6 +100,7 @@
             this.logOut.TabIndex = 18;
             this.logOut.Text = "Log out";
             this.logOut.UseVisualStyleBackColor = false;
+            this.logOut.Click += new System.EventHandler(this.logOutbtn);
             // 
             // button1
             // 
@@ -111,7 +112,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.closebtn);
             // 
             // panel1
             // 
@@ -134,7 +135,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox5
             // 
@@ -192,7 +192,6 @@
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
-            this.Load += new System.EventHandler(this.Home_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

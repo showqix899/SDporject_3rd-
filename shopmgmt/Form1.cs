@@ -23,6 +23,8 @@ namespace shopmgmt
         string messgae = "Done";
         string errorMessage = "Something went wrong";
         
+
+
         private void Submit(object sender, EventArgs e)
         {
 
@@ -30,8 +32,8 @@ namespace shopmgmt
             try
             {
                 conn.Open();
-
-                var checkQuery = "SELECT COUNT(*) FROM registrantion WHERE username = @username OR email = @email";
+              
+                var checkQuery = "SELECT COUNT(*) FROM registration WHERE username = @username OR email = @email";
                 SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
                 checkCmd.Parameters.AddWithValue("@username", Username_r.Text);
                 checkCmd.Parameters.AddWithValue("@email", email_r.Text);
@@ -46,13 +48,15 @@ namespace shopmgmt
                 else
                 {
 
-                    var insertQuery = "INSERT INTO registrantion (username, email, phone, password, type) VALUES (@username, @email, @phone, @password, @type)";
+                    var insertQuery = "insert into registration values(@username,@email,@phone,@password)";
                     SqlCommand cmd = new SqlCommand(insertQuery, conn);
                     cmd.Parameters.AddWithValue("@username", Username_r.Text);
                     cmd.Parameters.AddWithValue("@email", email_r.Text);
                     cmd.Parameters.AddWithValue("@phone", phone_r.Text);
                     cmd.Parameters.AddWithValue("@password", pass_r.Text);
-                    cmd.Parameters.AddWithValue("@type", comboBox1.SelectedItem);
+                    
+
+
                     cmd.ExecuteNonQuery();
 
 
@@ -60,8 +64,17 @@ namespace shopmgmt
                     email_r.Clear();
                     phone_r.Clear();
                     pass_r.Clear();
-                    comboBox1.Items.Clear();
+                   
                     MessageBox.Show(messgae);
+                    
+
+                    
+                    
+
+
+
+
+
                 }
 
                 conn.Close();
@@ -75,14 +88,14 @@ namespace shopmgmt
             
 
 
-
+            
 
         }
 
         private void Login(object sender, EventArgs e)
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("select * from registrantion where username=@username and password = @password", conn);
+            SqlCommand cmd = new SqlCommand("select * from registration where username=@username and password = @password", conn);
             cmd.Parameters.AddWithValue("@username", login_name.Text);
             cmd.Parameters.AddWithValue("@phone",login_name.Text);
             cmd.Parameters.AddWithValue("@password",login_pass.Text);
@@ -104,9 +117,11 @@ namespace shopmgmt
                 login_name.Clear();
                 login_pass.Clear();
                 Home home = new Home();
+                
                 home.Show();
-                Form1 form = new Form1();
-                form.Close();
+                this.Hide();
+                
+                
                 
                 
             }
@@ -124,8 +139,6 @@ namespace shopmgmt
         {
             this.Close();
         }
-
-      
 
         
     }

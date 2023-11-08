@@ -19,14 +19,39 @@ namespace shopmgmt
 
         
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
         private void Admin(object sender, EventArgs e)
         {
 
+        }
+
+        private void admin_Click(object sender, EventArgs e)
+        {
+            Admin_loginform admin_Loginform = new Admin_loginform();
+            admin_Loginform.Show();
+            this.Hide();
+          
+            
+        }
+
+        private void stock_Click(object sender, EventArgs e)
+        {
+            inventory inventory = new inventory();
+            inventory.Show();
+            this.Hide();
+        }
+
+        private void logOutbtn(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Hide();
+        }
+
+        private void closebtn(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

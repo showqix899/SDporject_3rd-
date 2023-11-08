@@ -38,8 +38,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.email_r = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pass_r = new System.Windows.Forms.TextBox();
             this.phone_r = new System.Windows.Forms.TextBox();
@@ -133,8 +131,6 @@
             this.panel1.BackColor = System.Drawing.Color.Orange;
             this.panel1.Controls.Add(this.email_r);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pass_r);
             this.panel1.Controls.Add(this.phone_r);
@@ -167,30 +163,6 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "Email";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(68, 513);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 25);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Registration Type";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.Orange;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Coustomer",
-            ""});
-            this.comboBox1.Location = new System.Drawing.Point(73, 561);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 15;
             // 
             // button1
             // 
@@ -337,8 +309,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox email_r;

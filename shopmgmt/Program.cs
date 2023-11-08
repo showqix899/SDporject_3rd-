@@ -16,9 +16,16 @@ namespace shopmgmt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new shopmgmt.Form1());
+            //Application.Run(new shopmgmt.updateCustomerInfo());
             //Application.Run(new shopmgmt.mobileStock());
-            Application.Run(new Form1());
-           
+            //  Application.Run(new shopmgmt.Admin_loginform());
+            //Application.Run(new shopmgmt.inventory());
+            //Application.Run(new shopmgmt.Customerinfo());
+           // Application.Run(new shopmgmt.serachMobile());
+          // Application.Run(new shopmgmt.searchCustomer());
+          Application.Run(new shopmgmt.SellInfo());
+
         }
     }
 }
