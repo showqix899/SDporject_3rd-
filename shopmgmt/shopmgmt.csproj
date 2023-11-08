@@ -53,6 +53,7 @@
       <DependentUpon>Admin_loginform.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
+    <Compile Include="connectionClass.cs" />
     <Compile Include="Customerinfo.cs">
       <SubType>Form</SubType>
     </Compile>

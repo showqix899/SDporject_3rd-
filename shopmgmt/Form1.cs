@@ -12,14 +12,16 @@ using System.Windows.Forms;
 
 namespace shopmgmt
 {    
-
+    
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
+            
         }
-        SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
+        
         string messgae = "Done";
         string errorMessage = "Something went wrong";
         
@@ -27,6 +29,10 @@ namespace shopmgmt
 
         private void Submit(object sender, EventArgs e)
         {
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
 
 
             try
@@ -94,6 +100,10 @@ namespace shopmgmt
 
         private void Login(object sender, EventArgs e)
         {
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
             conn.Open();
             SqlCommand cmd = new SqlCommand("select * from registration where username=@username and password = @password", conn);
             cmd.Parameters.AddWithValue("@username", login_name.Text);

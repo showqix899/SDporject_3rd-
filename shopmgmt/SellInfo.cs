@@ -69,11 +69,12 @@ namespace shopmgmt
                 cmd.Parameters.AddWithValue("@date", date.Text);
                 cmd.ExecuteNonQuery();
                 conn.Close();
+                MessageBox.Show(Message);
 
             }
             catch
             {
-                MessageBox.Show(errorMessage)
+                MessageBox.Show(errorMessage);
             }
         }
     }
