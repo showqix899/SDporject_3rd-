@@ -54,19 +54,27 @@ namespace shopmgmt
 
         private void addSellInfo(object sender, EventArgs e)
         {
-            conn.Open();
-            var insertQuery = "insert into sell_info2 values(@name,@phone,@email,@brand,@quantity,@productid,@price,@date)";
-            SqlCommand cmd = new SqlCommand(insertQuery, conn);
-            cmd.Parameters.AddWithValue("@name", cstmrName.Text);
-            cmd.Parameters.AddWithValue("@phone", cstmrPhone.Text);
-            cmd.Parameters.AddWithValue("@email", cstmrEmail.Text);
-            cmd.Parameters.AddWithValue("@brand", purchasedBrand.SelectedItem);
-            cmd.Parameters.AddWithValue("@quantity", quantity.Text);
-            cmd.Parameters.AddWithValue("@productid", Productid.Text);
-            cmd.Parameters.AddWithValue("@price",cost.Text);
-            cmd.Parameters.AddWithValue("@date", date.Text);
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            try
+            {
+                conn.Open();
+                var insertQuery = "insert into sell_info2 values(@name,@phone,@email,@brand,@quantity,@productid,@price,@date)";
+                SqlCommand cmd = new SqlCommand(insertQuery, conn);
+                cmd.Parameters.AddWithValue("@name", cstmrName.Text);
+                cmd.Parameters.AddWithValue("@phone", cstmrPhone.Text);
+                cmd.Parameters.AddWithValue("@email", cstmrEmail.Text);
+                cmd.Parameters.AddWithValue("@brand", purchasedBrand.SelectedItem);
+                cmd.Parameters.AddWithValue("@quantity", quantity.Text);
+                cmd.Parameters.AddWithValue("@productid", Productid.Text);
+                cmd.Parameters.AddWithValue("@price", cost.Text);
+                cmd.Parameters.AddWithValue("@date", date.Text);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            catch
+            {
+                MessageBox.Show(errorMessage)
+            }
         }
     }
 }
