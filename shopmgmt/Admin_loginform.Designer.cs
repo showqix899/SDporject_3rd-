@@ -29,21 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
             this.button1 = new System.Windows.Forms.Button();
             this.adminPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.adminUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-=======
-            this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.adminUsername = new System.Windows.Forms.TextBox();
-            this.adminPassword = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +48,6 @@
             this.panel1.Controls.Add(this.adminUsername);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label8);
-<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(77, 39);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(563, 721);
@@ -76,44 +66,6 @@
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-=======
-            this.panel1.Location = new System.Drawing.Point(141, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(436, 727);
-            this.panel1.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(159, 25);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 31);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "ADMIN";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(33, 191);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 24);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Username";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // adminUsername
-            // 
-            this.adminUsername.BackColor = System.Drawing.Color.Orange;
-            this.adminUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminUsername.Location = new System.Drawing.Point(165, 187);
-            this.adminUsername.Name = "adminUsername";
-            this.adminUsername.Size = new System.Drawing.Size(238, 30);
-            this.adminUsername.TabIndex = 8;
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // 
             // adminPassword
             // 
@@ -135,7 +87,6 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "password";
             // 
-<<<<<<< HEAD
             // adminUsername
             // 
             this.adminUsername.BackColor = System.Drawing.Color.Orange;
@@ -166,21 +117,6 @@
             this.label8.Size = new System.Drawing.Size(107, 31);
             this.label8.TabIndex = 2;
             this.label8.Text = "ADMIN";
-=======
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(165, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(238, 29);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.admin_login);
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // 
             // button2
             // 
@@ -188,20 +124,13 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(678, 1);
-=======
-            this.button2.Location = new System.Drawing.Point(677, 4);
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(37, 29);
             this.button2.TabIndex = 19;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
             this.button2.Click += new System.EventHandler(this.button2_Click);
-=======
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
             // 
             // Admin_loginform
             // 
