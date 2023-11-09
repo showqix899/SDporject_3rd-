@@ -1,6 +1,6 @@
 ﻿namespace shopmgmt
 {
-    partial class Form1
+    partial class SingUp
     {
         /// <summary>
         /// Required designer variable.
@@ -76,7 +76,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "login";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Login);
+           // this.button2.Click += new System.EventHandler(this.Login);
             // 
             // label5
             // 
@@ -174,7 +174,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Submit);
+           // this.button1.Click += new System.EventHandler(this.Submit);
             // 
             // pass_r
             // 
@@ -254,7 +254,7 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "X";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            //this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label9
             // 
@@ -315,4 +315,3 @@
         private System.Windows.Forms.Label label10;
     }
 }
-

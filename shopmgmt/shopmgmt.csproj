@@ -59,11 +59,17 @@
     <Compile Include="Customerinfo.Designer.cs">
       <DependentUpon>Customerinfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="SingUp.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SingUp.Designer.cs">
+      <DependentUpon>SingUp.cs</DependentUpon>
+    </Compile>
+    <None Include="signup">
+      <SubType>Form</SubType>
+    </None>
     <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+      <DependentUpon>signup</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -110,7 +116,7 @@
       <DependentUpon>Customerinfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+      <DependentUpon>signup</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

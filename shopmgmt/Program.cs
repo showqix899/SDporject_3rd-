@@ -18,7 +18,7 @@ namespace shopmgmt
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Initialize(); // Uncomment this line
-            Application.Run(new Form1());
+            Application.Run(new SingUp());
         }
 
     }
