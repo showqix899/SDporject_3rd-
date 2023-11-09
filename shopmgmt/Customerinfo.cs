@@ -13,7 +13,7 @@ namespace shopmgmt
 {
     public partial class Customerinfo : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
         string messgae = "Done";
         string errorMessage = "Something went wrong";
         public Customerinfo()
@@ -23,7 +23,10 @@ namespace shopmgmt
 
         private void customerinfo(object sender, EventArgs e)
         {
-            
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
             conn.Open();
             SqlDataAdapter adapter = new SqlDataAdapter("SELECT * From customer_info", conn);
             DataTable datatable = new DataTable();

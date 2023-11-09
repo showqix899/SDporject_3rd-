@@ -13,15 +13,14 @@ namespace shopmgmt
 {
     public partial class mobileStock : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
         string Message = "DONE";
         String errorMessage = "Something went wrong";
-<<<<<<< HEAD
+
         string gender;
 
-=======
-       
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
+
+     
         public mobileStock()
         {
             InitializeComponent();
@@ -32,8 +31,12 @@ namespace shopmgmt
         {
             try
             {
+                connectionOfSql cnn = new connectionOfSql();
+
+
+                SqlConnection conn = new SqlConnection(cnn.connectionString);
                 conn.Open();
-<<<<<<< HEAD
+
                 var inserQuery = "insert into stockTable values(@id,@brand,@name,@colour,@ram,@rom,@processor,@price)";
                 SqlCommand cmd = new SqlCommand(inserQuery, conn);
                 cmd.Parameters.AddWithValue("@id", addMobileId.Text);
@@ -54,26 +57,9 @@ namespace shopmgmt
                 //rom.Items.Clear();
                 processor.Clear();
                 mobilePrice.Clear();
-=======
-                var inserQuery = "insert into stockTable values(@id,@brand,@name,@colour,@ram,@rom,@processor)";
-                SqlCommand cmd = new SqlCommand(inserQuery, conn);
-                cmd.Parameters.AddWithValue("@id", addMobileId.Text);
-                cmd.Parameters.AddWithValue("@brand", brand.SelectedItem);
-                cmd.Parameters.AddWithValue("@name", mobileName.Text);
-                cmd.Parameters.AddWithValue("@colour", colour.SelectedItem);
-                cmd.Parameters.AddWithValue("@ram", ram.SelectedItem);
-                cmd.Parameters.AddWithValue("rom", rom.SelectedItem);
-                cmd.Parameters.AddWithValue("processor", processor.Text);
-                cmd.ExecuteNonQuery();
-                conn.Close();
-                addMobileId.Clear();
-                brand.Items.Clear();
-                mobileName.Clear();
-                colour.Items.Clear();
-                ram.Items.Clear();
-                rom.Items.Clear();
-                processor.Clear();
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
+
+                
+
                 MessageBox.Show(Message);
             }
             catch
@@ -81,44 +67,19 @@ namespace shopmgmt
                 MessageBox.Show(errorMessage);
             }
         }
-
-      
-
-<<<<<<< HEAD
-        
-=======
-        private void addCustomerInfo(object sender, EventArgs e)
-        {
-            try
-            {
-                conn.Open();
-                var insertQuery = "insert into customer_info values(@customer_id,@customer_name,@customer_address,@customer_phone,@customer_email)";
-                SqlCommand cmd = new SqlCommand(insertQuery, conn);
-                cmd.Parameters.AddWithValue("@customer_id",customerid.Text);
-                cmd.Parameters.AddWithValue("@customer_name",customername.Text);
-                cmd.Parameters.AddWithValue("@customer_address",customeraddress.Text);
-                cmd.Parameters.AddWithValue("@customer_phone",customerphone.Text);
-                cmd.Parameters.AddWithValue("@customer_email",customeremail.Text);
-                cmd.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show(Message);
-            }
-            catch
-            {
-                MessageBox.Show(errorMessage);
-            }
-        }
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
-
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-<<<<<<< HEAD
+
 
         private void addcustomer(object sender, EventArgs e)
 
         {
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
             try
             {
                 if (radioButton1.Checked == true)
@@ -155,8 +116,11 @@ namespace shopmgmt
 
         private void deletCustomer(object sender, EventArgs e)
         {
-            
-                conn.Open();
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
+            conn.Open();
                 var deletCommand = "delete customer_info where phone=@phone";
                 SqlCommand delcmd = new SqlCommand(deletCommand, conn);
                 delcmd.Parameters.AddWithValue("@phone", customerPhone.Text);
@@ -170,6 +134,10 @@ namespace shopmgmt
 
         private void deleteMobile(object sender, EventArgs e)
         {
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
             conn.Open();
             var deletCommand = "delete stockTable where id=@id";
             SqlCommand delcmd = new SqlCommand(deletCommand, conn);
@@ -207,7 +175,6 @@ namespace shopmgmt
             home.Show();
             this.Hide();
         }
-=======
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
+
     }
 }

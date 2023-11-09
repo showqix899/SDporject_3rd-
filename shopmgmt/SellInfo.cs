@@ -13,7 +13,7 @@ namespace shopmgmt
 {
     public partial class SellInfo : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
         string Message = "DONE";
         String errorMessage = "Something went wrong";
         string gender;
@@ -54,6 +54,10 @@ namespace shopmgmt
 
         private void addSellInfo(object sender, EventArgs e)
         {
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
             try
             {
                 conn.Open();

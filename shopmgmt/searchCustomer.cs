@@ -13,7 +13,7 @@ namespace shopmgmt
 {
     public partial class searchCustomer : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
         string messgae = "Done";
         string errorMessage = "Something went wrong";
         public searchCustomer()
@@ -25,6 +25,10 @@ namespace shopmgmt
         {
             try
             {
+                connectionOfSql cnn = new connectionOfSql();
+
+
+                SqlConnection conn = new SqlConnection(cnn.connectionString);
                 conn.Open();
                 var insertQuery = "SELECT * FROM customer_info WHERE phone = @phone";
                 SqlCommand cmd = new SqlCommand(insertQuery, conn);

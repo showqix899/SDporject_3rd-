@@ -13,7 +13,7 @@ namespace shopmgmt
 {
     public partial class inventory : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
+       // SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
         string Message = "DONE";
         String errorMessage = "Something went wrong";
         string gender;
@@ -29,6 +29,10 @@ namespace shopmgmt
 
         private void button1_Click(object sender, EventArgs e)
         {
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
             conn.Open();
             SqlDataAdapter adapter = new SqlDataAdapter("SELECT * From stockTable",conn);
             DataTable datatable = new DataTable();

@@ -18,17 +18,20 @@ namespace shopmgmt
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
+        // SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
         string messgae = "Done";
         string errorMessage = "Something went wrong";
-<<<<<<< HEAD
 
         private void button1_Click(object sender, EventArgs e)
         {
+            connectionOfSql cnn = new connectionOfSql();
+
+
+            SqlConnection conn = new SqlConnection(cnn.connectionString);
             conn.Open();
             SqlCommand cmd = new SqlCommand("select * from admin_login where username=@username and password = @password", conn);
             cmd.Parameters.AddWithValue("@username", adminUsername.Text);
-           // cmd.Parameters.AddWithValue("@phone", login_name.Text);
+            // cmd.Parameters.AddWithValue("@phone", login_name.Text);
             cmd.Parameters.AddWithValue("@password", adminPassword.Text);
             if (adminUsername.Text == "")
             {
@@ -55,22 +58,14 @@ namespace shopmgmt
             {
                 MessageBox.Show("invalid username or password");
             }
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-=======
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void admin_login(object sender, EventArgs e)
-        {
-            
->>>>>>> 3f7ff44b9421fd3bfc83d4798ee0f1d3f0fb65a2
         }
     }
 }

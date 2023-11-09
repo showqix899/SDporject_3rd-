@@ -29,6 +29,9 @@ namespace shopmgmt
 
         private void Submit(object sender, EventArgs e)
         {
+
+
+
             connectionOfSql cnn = new connectionOfSql();
 
 
