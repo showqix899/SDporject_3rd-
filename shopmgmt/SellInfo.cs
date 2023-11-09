@@ -81,5 +81,10 @@ namespace shopmgmt
                 MessageBox.Show(errorMessage);
             }
         }
+
+        private void SellInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
