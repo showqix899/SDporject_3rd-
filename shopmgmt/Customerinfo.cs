@@ -14,8 +14,8 @@ namespace shopmgmt
     public partial class Customerinfo : Form
     {
         //SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
-        string messgae = "Done";
-        string errorMessage = "Something went wrong";
+        //string messgae = "Done";
+       // string errorMessage = "Something went wrong";
         public Customerinfo()
         {
             InitializeComponent();
@@ -52,6 +52,18 @@ namespace shopmgmt
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void closeBtn(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void homeBtn(object sender, EventArgs e)
+        {
+            Home home = new Home(); 
+            home.Show();
+            this.Hide();
         }
     }
 }

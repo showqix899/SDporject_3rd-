@@ -59,17 +59,23 @@
     <Compile Include="Customerinfo.Designer.cs">
       <DependentUpon>Customerinfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="searchSellInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchSellInfo.Designer.cs">
+      <DependentUpon>searchSellInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showSellInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showSellInfo.Designer.cs">
+      <DependentUpon>showSellInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="SingUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SingUp.Designer.cs">
       <DependentUpon>SingUp.cs</DependentUpon>
-    </Compile>
-    <None Include="signup">
-      <SubType>Form</SubType>
-    </None>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>signup</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -115,9 +121,6 @@
     <EmbeddedResource Include="Customerinfo.resx">
       <DependentUpon>Customerinfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>signup</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +148,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="serachMobile.resx">
       <DependentUpon>serachMobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchSellInfo.resx">
+      <DependentUpon>searchSellInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showSellInfo.resx">
+      <DependentUpon>showSellInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingUp.resx">
+      <DependentUpon>SingUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

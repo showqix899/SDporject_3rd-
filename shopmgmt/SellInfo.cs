@@ -82,9 +82,13 @@ namespace shopmgmt
             }
         }
 
-        private void SellInfo_Load(object sender, EventArgs e)
-        {
+        
 
+        private void showinfo(object sender, EventArgs e)
+        {
+            showSellInfo sh=new showSellInfo();
+            sh.Show();
+            this.Hide();
         }
     }
 }

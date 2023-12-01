@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +77,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "login";
             this.button2.UseVisualStyleBackColor = false;
-           // this.button2.Click += new System.EventHandler(this.Login);
+            this.button2.Click += new System.EventHandler(this.loginBtn);
             // 
             // label5
             // 
@@ -94,6 +95,7 @@
             this.login_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_pass.Location = new System.Drawing.Point(73, 378);
             this.login_pass.Name = "login_pass";
+            this.login_pass.PasswordChar = '*';
             this.login_pass.Size = new System.Drawing.Size(204, 23);
             this.login_pass.TabIndex = 13;
             // 
@@ -174,7 +176,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
-           // this.button1.Click += new System.EventHandler(this.Submit);
+            this.button1.Click += new System.EventHandler(this.registrationbtn);
             // 
             // pass_r
             // 
@@ -254,7 +256,7 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "X";
             this.button3.UseVisualStyleBackColor = false;
-            //this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.closeBtn);
             // 
             // label9
             // 
@@ -267,18 +269,29 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "OR";
             // 
-            // Form1
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(397, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(200, 31);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "MOBILE SHOP";
+            // 
+            // SingUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(992, 750);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "SingUp";
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -313,5 +326,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox email_r;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label6;
     }
 }

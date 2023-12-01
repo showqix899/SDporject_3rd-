@@ -27,10 +27,16 @@ namespace shopmgmt
 
 
 
-        private void Submit(object sender, EventArgs e)
+        
+
+        
+
+
+
+       
+
+        private void registrationbtn(object sender, EventArgs e)
         {
-
-
 
             connectionOfSql cnn = new connectionOfSql();
 
@@ -95,13 +101,9 @@ namespace shopmgmt
                 MessageBox.Show(errorMessage);
             }
 
-
-
-
-
         }
 
-        private void Login(object sender, EventArgs e)
+        private void loginBtn(object sender, EventArgs e)
         {
             connectionOfSql cnn = new connectionOfSql();
 
@@ -126,7 +128,7 @@ namespace shopmgmt
             dataAdapter.Fill(dataTable);
             if (dataTable.Rows.Count > 0)
             {
-                MessageBox.Show(messgae);
+                //MessageBox.Show(messgae);
                 login_name.Clear();
                 login_pass.Clear();
                 Home home = new Home();
@@ -134,25 +136,18 @@ namespace shopmgmt
                 home.Show();
                 this.Hide();
 
-
-
-
             }
             else
             {
                 MessageBox.Show("invalid username or password");
+                login_name.Clear();
+                login_pass.Clear();
             }
-
-
         }
 
-
-
-        private void button3_Click(object sender, EventArgs e)
+        private void closeBtn(object sender, EventArgs e)
         {
             this.Close();
         }
-
-
     }
 }

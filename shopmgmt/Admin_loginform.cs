@@ -20,7 +20,7 @@ namespace shopmgmt
         }
         // SqlConnection conn = new SqlConnection("Data Source=DAXTER899\\SQLEXPRESS;Initial Catalog=mobile;Integrated Security=True");
         string messgae = "Done";
-        string errorMessage = "Something went wrong";
+        //string errorMessage = "Something went wrong";
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -47,7 +47,7 @@ namespace shopmgmt
             dataAdapter.Fill(dataTable);
             if (dataTable.Rows.Count > 0)
             {
-                MessageBox.Show(messgae);
+                //MessageBox.Show(messgae);
                 adminUsername.Clear();
                 adminPassword.Clear();
                 mobileStock mobileStock = new mobileStock();

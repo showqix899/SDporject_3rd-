@@ -90,6 +90,7 @@
             this.sellInformation.TabIndex = 17;
             this.sellInformation.Text = "Sell Information";
             this.sellInformation.UseVisualStyleBackColor = false;
+            this.sellInformation.Click += new System.EventHandler(this.sellInfo);
             // 
             // logOut
             // 

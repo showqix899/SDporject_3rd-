@@ -73,6 +73,7 @@
             this.adminPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminPassword.Location = new System.Drawing.Point(165, 286);
             this.adminPassword.Name = "adminPassword";
+            this.adminPassword.PasswordChar = '*';
             this.adminPassword.Size = new System.Drawing.Size(238, 30);
             this.adminPassword.TabIndex = 10;
             // 

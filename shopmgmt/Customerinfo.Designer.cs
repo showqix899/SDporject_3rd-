@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.customerinfoview = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.customerinfoview = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerinfoview)).BeginInit();
             this.panel2.SuspendLayout();
@@ -54,6 +54,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1051, 692);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(166, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 31);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Customer Info";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // customerinfoview
+            // 
+            this.customerinfoview.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.customerinfoview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customerinfoview.Location = new System.Drawing.Point(149, 122);
+            this.customerinfoview.Name = "customerinfoview";
+            this.customerinfoview.Size = new System.Drawing.Size(879, 539);
+            this.customerinfoview.TabIndex = 22;
             // 
             // button2
             // 
@@ -82,15 +102,6 @@
             this.button1.Text = "VIew";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.customerinfo);
-            // 
-            // customerinfoview
-            // 
-            this.customerinfoview.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.customerinfoview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customerinfoview.Location = new System.Drawing.Point(172, 78);
-            this.customerinfoview.Name = "customerinfoview";
-            this.customerinfoview.Size = new System.Drawing.Size(879, 614);
-            this.customerinfoview.TabIndex = 22;
             // 
             // panel2
             // 
@@ -127,6 +138,18 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Menu";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Orange;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(1300, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(32, 35);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "X";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.closeBtn);
+            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Orange;
@@ -140,28 +163,7 @@
             this.button8.TabIndex = 24;
             this.button8.Text = "HOME";
             this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Orange;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(1300, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(32, 35);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "X";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(166, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 31);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Customer Info";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.button8.Click += new System.EventHandler(this.homeBtn);
             // 
             // Customerinfo
             // 

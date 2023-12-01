@@ -19,8 +19,8 @@ namespace shopmgmt
 
         string gender;
 
+        public static DataTable DataSource { get; internal set; }
 
-     
         public mobileStock()
         {
             InitializeComponent();
@@ -91,13 +91,12 @@ namespace shopmgmt
                     gender = "Female";
                 }
                 conn.Open();
-                var insertQuery = "insert into customer_info values(@name,@address,@phone,@email,@mobilename,@gender)";
+                var insertQuery = "insert into customer_info values(@name,@address,@phone,@email,@gender)";
                 SqlCommand cmd = new SqlCommand(insertQuery, conn);
                 cmd.Parameters.AddWithValue("@name", customerName.Text);
                 cmd.Parameters.AddWithValue("@address", customerAddress.Text);
                 cmd.Parameters.AddWithValue("@phone", customerPhone.Text);
                 cmd.Parameters.AddWithValue("@email", customerEmail.Text);
-                cmd.Parameters.AddWithValue("mobilename", mName.Text);
                 cmd.Parameters.AddWithValue("@gender", gender);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -106,7 +105,7 @@ namespace shopmgmt
                 customerAddress.Clear();
                 customerPhone.Clear();
                 customerEmail.Clear();
-                mName.Clear();
+                
                 
 
             }
@@ -155,12 +154,7 @@ namespace shopmgmt
             this.Hide();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            inventory inventory = new inventory();
-            inventory.Show();
-            this.Hide();
-        }
+       
 
         private void customerInfo(object sender, EventArgs e)
         {

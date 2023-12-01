@@ -50,10 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.mobileName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -64,8 +61,6 @@
             this.customerPhone = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.mName = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.customerEmail = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.customerAddress = new System.Windows.Forms.TextBox();
@@ -73,6 +68,8 @@
             this.customerName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -355,7 +352,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Orange;
-            this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button8);
@@ -364,36 +360,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(170, 756);
             this.panel2.TabIndex = 1;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Orange;
-            this.button6.BackgroundImage = global::shopmgmt.Properties.Resources.Home;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(21, 326);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(124, 56);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "View Mobile Stock";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Orange;
-            this.button2.BackgroundImage = global::shopmgmt.Properties.Resources.Home;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(21, 224);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 75);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "View Customer info";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.customerInfo);
             // 
             // button4
             // 
@@ -408,21 +374,6 @@
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Orange;
-            this.button8.BackgroundImage = global::shopmgmt.Properties.Resources.Home;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(21, 122);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(124, 56);
-            this.button8.TabIndex = 24;
-            this.button8.Text = "HOME";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.homebtn);
             // 
             // label9
             // 
@@ -456,8 +407,6 @@
             this.panel3.Controls.Add(this.customerPhone);
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.mName);
-            this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.customerEmail);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.customerAddress);
@@ -474,7 +423,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(364, 523);
+            this.radioButton2.Location = new System.Drawing.Point(357, 425);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(122, 35);
             this.radioButton2.TabIndex = 34;
@@ -500,7 +449,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(261, 523);
+            this.radioButton1.Location = new System.Drawing.Point(254, 425);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(90, 35);
             this.radioButton1.TabIndex = 33;
@@ -512,7 +461,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(47, 523);
+            this.label15.Location = new System.Drawing.Point(40, 425);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(110, 31);
             this.label15.TabIndex = 32;
@@ -550,25 +499,6 @@
             this.label16.Size = new System.Drawing.Size(97, 31);
             this.label16.TabIndex = 30;
             this.label16.Text = "Phone";
-            // 
-            // mName
-            // 
-            this.mName.BackColor = System.Drawing.Color.Orange;
-            this.mName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mName.Location = new System.Drawing.Point(46, 459);
-            this.mName.Name = "mName";
-            this.mName.Size = new System.Drawing.Size(468, 30);
-            this.mName.TabIndex = 27;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(40, 411);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(183, 31);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Mobile Nmae";
             // 
             // customerEmail
             // 
@@ -638,6 +568,36 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "Name";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Orange;
+            this.button2.BackgroundImage = global::shopmgmt.Properties.Resources.Home;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(21, 224);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(124, 75);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "View Customer info";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.customerInfo);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Orange;
+            this.button8.BackgroundImage = global::shopmgmt.Properties.Resources.Home;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(21, 122);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(124, 56);
+            this.button8.TabIndex = 24;
+            this.button8.Text = "HOME";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.homebtn);
+            // 
             // mobileStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -695,8 +655,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox customerPhone;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox mName;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox customerEmail;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox customerAddress;
@@ -710,6 +668,5 @@
         private System.Windows.Forms.TextBox mobilePrice;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
     }
 }

@@ -44,14 +44,21 @@ namespace shopmgmt
 
         private void logOutbtn(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
+            SingUp SingUp = new SingUp();
+            SingUp.Show();
             this.Hide();
         }
 
         private void closebtn(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void sellInfo(object sender, EventArgs e)
+        {
+           SellInfo SellInfo = new SellInfo();
+            SellInfo.Show();   
+            this.Hide();
         }
     }
 }

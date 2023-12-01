@@ -307,6 +307,7 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "View Sell Info";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.showinfo);
             // 
             // button4
             // 
@@ -370,9 +371,8 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SellInfo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellInfo";
-            this.Load += new System.EventHandler(this.SellInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
